@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ofrecemos una gran variedad de productos de alta calidad y confort ¡Vení a conocernos! ¡Conocé nuestras redes! ¿Tenés alguna duda?">
+    <meta name="keywords" content="shoes of leather, zapatos de cuero, borcegos de cuero, zapatos de charol, botas de cuero, mocasines de cuero, calzados para hombres, zapatos, botas, mocasines, zapatos de vestir, fabricantes de calzado, fabrica de calzado, envios a todo el pais, envios gratis">
+    <title>Contacto | KARKAMAN </title>
+    <script src="https://kit.fontawesome.com/7c7d2d5fd7.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/principal.css">
+  </head>
+  <body>
+    <header class="header-general">
+      <a class="header-general__botonAbrir" href="#menu" class="abrir"><i class="header-general__botonLink fas fa-bars"></i></a>
+      <nav class="navbar" id="menu">
+        <h1 class="navbar__title">
+          <a class="navbar__titleLink" href="../index.html">Karkama<span class="navbar__titleSpan">N</span></a>
+        </h1>
+        <a class="navbar__botonCerrar" href="#" class="cerrar"><i class="navbar__botonLink fas fa-times"></i></a>
+        <ul class="navbar__menu navbar_menu--orden">
+          <li class="navbar__menuItem">
+            <a class="navbar__menuLink" href="../index.html">Inicio</a>
+          </li>
+
+          <li class="navbar__menuItem">
+            <a class="navbar__menuLink" href="../Secciones/Catalogo.html">Catálogo</a>
+          </li>
+
+          <li class="navbar__menuItem">
+            <a class="navbar__menuLink" href="../Secciones/Nosotros.html">Nosotros</a>
+          </li>
+        </ul>
+
+        <ul class="navbar__menu">
+          <li class="navbar__menuItem">
+            <a class="navbar__menuLink" href="../Secciones/Preguntas-frecuentes.html">Preguntas Frecuentes
+            </a>
+          </li>
+          <li class="navbar__menuItem">
+            <a class="navbar__menuLink" href="../Secciones/Contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="back-principal-section">
+      <h2 class="title-principal-section">Contacto</h2>
+    </section>
+
+    <section id="showroom" class="section-contact__subtitleBack">
+      <h3 class="section-contact__subtitle subtitle">Nuestro Showroom</h3>
+    </section>
+
+    <section class="section-location">
+      <div class="section-location__block">
+        <iframe class="section-location__blockIframe"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26256.269488199934!2d-58.57565899679693!3d-34.6538521960255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7d93bab75a3%3A0xaafe140bc9dea3db!2sRamos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1599600116009!5m2!1ses-419!2sar"
+          width="600"
+          height="450"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0">
+        </iframe>
+      </div>
+      <div class="section-location__text">
+        <p class="section-location__textDirection">Mariano Moreno xxx, Ramos Mejia CP 1704 Buenos Aires</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="back-sub-section">
+        <h2 class="back-sub-section__title section-title">Seguinos en Redes</h2>
+      </div>
+
+      <div class="section-redes">
+        <ul class="section-redes__list">
+          <li class="section-redes__listItem">
+            <a class="section-redes__listLink" href="https://www.instagram.com/zapatos.karkaman/" target="BLANK">
+              <i class="section-redes__listIcon fab fa-instagram"></i>
+            </a>
+          </li>
+
+          <li class="section-redes__listItem">
+            <a class="section-redes__listLink" href="https://www.facebook.com/zapatos.karkaman" target="BLANK">
+              <i class="section-redes__listIcon fab fa-facebook"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="back-sub-section" id="consulta">
+        <h2 class="back-sub-section__title section-title">¡Dejá tu contacto y escribinos!</h2>
+      </div>
+
+      <div class="section-contact__block">
+        <form class="section-contact__form" action="#">
+          <label class="section-contact__formLabel" for="nombre_apellido">Nombre</label>
+          <input class="section-contact__formInput"
+            type="text"
+            name="nombre_apellido"
+            placeholder="Juan Perez"
+            id="nombre_apellido"
+            required/>
+
+          <label class="section-contact__formLabel" for="email">Email</label>
+          <input class="section-contact__formInput"
+            type="email"
+            name="email"
+            placeholder="Correoelectrónico@mail.com"
+            id="email"
+            required/>
+
+          <label class="section-contact__formLabel" for="numero_telefonico">Número</label>
+          <input class="section-contact__formInput"
+            type="number"
+            name="numero_telefonico"
+            placeholder="Teléfono 011 XX XX XX XX"
+            id="numero_telefonico"
+            min="11"
+            required/>
+          <div class="input__radio">
+            <input class="input__radio--item" type="radio" name="tipo-consulta" value="pedido" id="check" required /> <label for="check">Pedido</label>
+            <input class="input__radio--item" type="radio" name="tipo-consulta" value="consulta" id="second-check" required /> <label for="second-check">Consulta</label>
+          </div>
+          <textarea class="section-contact__formTextarea" name="consulta" cols="15" rows="15" placeholder="...">
+          </textarea>
+
+          <div class="section-contact__formButton">
+            <input class="section-contact__formInput section-contact__formBtn " type="submit" value="Enviar"/>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer-general">
+      <p class="footer-general__text">© 2020 KARKAMAN</p>
+      <h1 class="footer-general__title"><a class="footer-general__titleLink" href="../index.html">KarkamaN</a></h1>
+      <ul class="footer-general__list">
+      <li class="footer-general__listItem">
+         <a class="footer-general__listLink" href="https://www.instagram.com/zapatos.karkaman/" target="BLANK">
+            <i class="footer-general__listIcon fab fa-instagram"></i>
+         </a>
+      </li>
+
+      <li class="footer-general__listItem">
+         <a class="footer-general__listLink" href="https://www.facebook.com/zapatos.karkaman" target="BLANK">
+            <i class="footer-general__listIcon fab fa-facebook"></i>
+         </a>
+      </li>
+     </ul>
+   </footer>
+
+
+  </body>
+</html>

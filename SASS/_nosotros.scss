@@ -1,0 +1,90 @@
+
+
+/*NOSOTROS*/
+.section-nosotros__block{
+    line-height: 2rem;
+    margin-top: 5rem ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    margin: auto;
+    width: 80%;
+    @media  screen and (max-width: 767px){
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+    @media  screen and (min-width: 768px) and (max-width: 1199px){
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+    .section-nosotros__article,
+    .section-nosotros__gallery{
+        width: 49%;
+        margin-top: 5rem;
+    }
+    .section-nosotros__article{
+        text-align: center;
+        p:first-child{
+            padding-top:0;
+        } 
+        p{
+            font-size: 1.2rem;
+            padding: 1rem 1rem 0 0;
+        }
+        @media  screen and (max-width: 767px){
+            width: 100%;
+        }
+        @media  screen and (min-width: 768px) and (max-width: 1199px){
+            width: 90%;
+        }
+        @media  screen and (min-width: 280px) and (max-width: 1199px){
+            margin: auto;
+            padding-top: 1rem;
+        }
+    }
+    .section-nosotros__gallery{
+        @media  screen and (max-width: 767px){
+            width: auto;
+            margin: auto;
+            padding-top: 2rem;
+        }
+        @media  screen and (min-width: 768px) and (max-width: 1199px){
+            margin: auto;
+            padding-top: 2rem;
+        }
+        .section-nosotos__galletyImg{
+            width: 100%;
+        }
+    }
+}
+
+.section-emprende__title{
+    text-align: center;
+    padding: 5rem;
+    font-weight: 100;
+    @media  screen and (max-width: 767px){
+        font-size: 1.5rem;
+        padding: 2rem;
+    }
+    @media  screen and (min-width: 768px) and (max-width: 1199px){
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+   
+    .section-emprende__detail{
+        color:$amarillo;
+        font-size: 4rem;
+        @media  screen and (max-width: 767px){
+            font-size: 2.5rem;
+            display: inline-block;
+        }
+        @media  screen and (min-width: 768px) and (max-width: 1199px){
+            font-size: 3rem ;
+        }
+    }
+
+}

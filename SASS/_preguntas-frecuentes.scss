@@ -1,0 +1,68 @@
+
+/*PREGUNTAS FRECUENTES*/
+.section-preguntas-frecuentes{
+    margin: 4rem 3rem;
+    text-align: center;
+    @media  screen and (max-width: 767px){
+        margin: auto;
+    }
+    .section-preguntas-frecuentes__container{
+        @media  screen and (max-width: 767px){
+            width: 90%;
+        }
+        .section-preguntas-frecuentes__article{
+            border-bottom: $borde;
+            padding: 2rem;
+            margin: 0 5rem;
+            @media  screen and (max-width: 767px){
+                margin: auto;
+                padding: 2rem 0;
+            }
+            @media  screen and (min-width: 768px) and (max-width: 1199px){
+                margin: 1rem;
+                padding: 1rem;
+            }
+            .section-preguntas-frecuentes__title{
+                color:$amarillo;
+                font-size: 2rem; 
+                font-weight: 200; 
+                @media  screen and (max-width: 767px){
+                    font-size: 1.8rem;
+                }
+            }
+            .section-preguntas-frecuentes__text{
+                padding-top: 1rem;
+                font-size: 1.2rem;
+                .section-preguntas-frecuentes__textLinkContacto{
+                    color: #fbe555 ; 
+                    transition: all 0.5s;
+                    &:hover{
+                        font-size: 1.3rem;
+                    }
+                }
+
+            }
+            .section-preguntas-frecuentes__paylist{
+                .section-preguntas-frecuentes__payItem{
+                    padding: 1rem;
+                    @media  screen and (max-width: 767px){
+                        padding-top:0;
+                    }
+                    .section-preguntas-frecuentes__payItemIcon{
+                        font-size: 5rem;
+                    }
+                }
+                .section-preguntas-frecuentes__payItemtext{
+                    .section-preguntas-frecuentes__payItemtextLink{
+                        color: white;
+                        text-decoration: underline;
+                        transition: all 1s;
+                        &:hover{
+                            color:$amarillo;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

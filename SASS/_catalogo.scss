@@ -1,0 +1,98 @@
+
+/*CATALOGO*/
+.back-principal-section{
+    padding-top: 2rem;
+    background:$amarillo;
+    width: auto;
+    .title-principal-section{
+        padding: 4rem;
+        font-weight: 500;
+        color:black;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+
+.catalogo{
+    .catalogo__list{
+        margin: 5rem;
+       /* @include flex(row, wrap, center, none);*/
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @media  screen and (max-width: 767px){
+            margin: 2rem;
+        }
+        @media  screen and (min-width: 768px) and (max-width: 1199px){
+            margin:2rem 1rem;
+        }
+        .catalogo__listItem{
+            width: 20%;
+            margin: 0.2rem;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            transition: all 1s;
+            @extend %img-hover;
+            @extend %hover;
+            @media  screen and (max-width: 767px){
+                width: 100%;
+            }
+            @media  screen and (min-width: 768px) and (max-width: 1199px){
+                width: 30%;
+            }
+            .catalogo__listImg{
+                width: 100%;
+            }
+            .block-hover{
+                .modal{
+                    color: black;
+
+                    .modal-content{
+                        position: relative;
+                        .close-modal{
+                            width: auto;
+                            position:absolute;
+                            right: 1rem;
+                            top:0;
+                            background: none;
+                            transition: all 1s;
+                            font-size: 2rem;
+                            border: none;
+                            &:hover{
+                                color:$amarillo; 
+                            }  
+                        }
+                    }
+                    .modal-body{
+                        width: 60%;
+                        margin: auto;
+                        text-align: center;
+                        .carousel{
+                            .carousel-inner{
+                                width: 100%;
+                            }
+                            .carousel-control-prev, 
+                            .carousel-control-next{
+                                width: 2rem;
+                                height: 2rem;
+                                margin: auto;
+                                background:rgba(0, 0, 0, 0.50);
+                                border-radius: 1rem;
+                                transition: all 0.5s;
+                                opacity: 1;
+                                &:hover{
+                                    background: $amarillo;
+                                   
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
