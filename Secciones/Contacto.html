@@ -10,11 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="../css/principal.css">
   </head>
+
   <body>
+    <!-- HEADER/NAV -->
     <header class="header-general">
       <a class="header-general__botonAbrir" href="#menu" class="abrir"><i class="header-general__botonLink fas fa-bars"></i></a>
       <nav class="navbar" id="menu">
-        <h1 class="navbar__title">
+        <h1 class="navbar__title" name="keywords" content="shoes of leather, zapatos de cuero, borcegos de cuero, zapatos de charol, botas de cuero, mocasines de cuero, calzados para hombres, zapatos, botas, mocasines, zapatos de vestir, fabricantes de calzado, fabrica de calzado, envios a todo el pais, envios gratis">
           <a class="navbar__titleLink" href="../index.html">Karkama<span class="navbar__titleSpan">N</span></a>
         </h1>
         <a class="navbar__botonCerrar" href="#" class="cerrar"><i class="navbar__botonLink fas fa-times"></i></a>
@@ -43,14 +45,17 @@
         </ul>
       </nav>
     </header>
+
+    <!-- TITLE-PRINCIPAL -->
     <section class="back-principal-section">
       <h2 class="title-principal-section">Contacto</h2>
     </section>
-
+    
+    <!-- SUBTITLE-LOCATION -->
     <section id="showroom" class="section-contact__subtitleBack">
-      <h3 class="section-contact__subtitle subtitle">Nuestro Showroom</h3>
+      <h3 class="section-contact__subtitle subtitle" name="keywords" content="shoes of leather, zapatos de cuero, borcegos de cuero, zapatos de charol, botas de cuero, mocasines de cuero, calzados para hombres, zapatos, botas, mocasines, zapatos de vestir, fabricantes de calzado, fabrica de calzado, envios a todo el pais, envios gratis">Nuestro Showroom</h3>
     </section>
-
+    <!-- SECTION-LOCATION -->
     <section class="section-location">
       <div class="section-location__block">
         <iframe class="section-location__blockIframe"
@@ -65,80 +70,83 @@
         </iframe>
       </div>
       <div class="section-location__text">
-        <p class="section-location__textDirection">Mariano Moreno xxx, Ramos Mejia CP 1704 Buenos Aires</p>
+        <p class="section-location__textDirection" name="keywords" content="shoes of leather, zapatos de cuero, borcegos de cuero, zapatos de charol, botas de cuero, mocasines de cuero, calzados para hombres, zapatos, botas, mocasines, zapatos de vestir, fabricantes de calzado, fabrica de calzado, envios a todo el pais, envios gratis">Mariano Moreno xxx, Ramos Mejia CP 1704 Buenos Aires</p>
       </div>
     </section>
-
-    <section>
-      <div class="back-sub-section">
-        <h2 class="back-sub-section__title section-title">Seguinos en Redes</h2>
-      </div>
-
-      <div class="section-redes">
-        <ul class="section-redes__list">
-          <li class="section-redes__listItem">
-            <a class="section-redes__listLink" href="https://www.instagram.com/zapatos.karkaman/" target="BLANK">
-              <i class="section-redes__listIcon fab fa-instagram"></i>
-            </a>
-          </li>
-
-          <li class="section-redes__listItem">
-            <a class="section-redes__listLink" href="https://www.facebook.com/zapatos.karkaman" target="BLANK">
-              <i class="section-redes__listIcon fab fa-facebook"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
+    
+    <!-- SUBTITLE-REDES -->
+    <section class="section-contact__subtitleBack">
+      <h3 class="section-contact__subtitle subtitle" name="keywords" content="shoes of leather, zapatos de cuero, borcegos de cuero, zapatos de charol, botas de cuero, mocasines de cuero, calzados para hombres, zapatos, botas, mocasines, zapatos de vestir, fabricantes de calzado, fabrica de calzado, envios a todo el pais, envios gratis">Seguinos en Redes</h3>
     </section>
+    <!-- SECTION-REDES -->
+    <section class="section-redes">
+      <ul class="section-redes__list">
+        <li class="section-redes__listItem">
+          <a class="section-redes__listLink" href="https://www.instagram.com/zapatos.karkaman/" target="BLANK">
+           <i class="section-redes__listIcon fab fa-instagram"></i>
+          </a>
+        </li>
 
-    <section>
-      <div class="back-sub-section" id="consulta">
-        <h2 class="back-sub-section__title section-title">¡Dejá tu contacto y escribinos!</h2>
-      </div>
-
-      <div class="section-contact__block">
-        <form class="section-contact__form" action="#">
-          <label class="section-contact__formLabel" for="nombre_apellido">Nombre</label>
-          <input class="section-contact__formInput"
+        <li class="section-redes__listItem">
+          <a class="section-redes__listLink" href="https://www.facebook.com/zapatos.karkaman" target="BLANK">
+            <i class="section-redes__listIcon fab fa-facebook"></i>
+         </a>
+       </li>
+      </ul>
+    </section>
+    
+    <!-- SUBTITLE-CONTACT-FORM -->
+    <section class="section-contact__subtitleBack" id="consulta">
+      <h3 class="section-contact__subtitle subtitle" name="keywords" content="shoes of leather, zapatos de cuero, borcegos de cuero, zapatos de charol, botas de cuero, mocasines de cuero, calzados para hombres, zapatos, botas, mocasines, zapatos de vestir, fabricantes de calzado, fabrica de calzado, envios a todo el pais, envios gratis">¡Dejá tu contacto y escribinos!</h3>
+    </section>
+    <!-- SECTION-CONTACT-FORM -->
+    <section class="section-contact-form">
+      <div class="section-contact-form__block">
+        <form class="section-contact-form__form" action="#">
+          <label class="section-contact-form__formLabel" for="nombre_apellido">Nombre</label>
+          <input class="section-contact-form__formInput"
             type="text"
             name="nombre_apellido"
             placeholder="Juan Perez"
             id="nombre_apellido"
             required/>
 
-          <label class="section-contact__formLabel" for="email">Email</label>
-          <input class="section-contact__formInput"
+          <label class="section-contact-form__formLabel" for="email">Email</label>
+          <input class="section-contact-form__formInput"
             type="email"
             name="email"
             placeholder="Correoelectrónico@mail.com"
             id="email"
             required/>
 
-          <label class="section-contact__formLabel" for="numero_telefonico">Número</label>
-          <input class="section-contact__formInput"
+          <label class="section-contact-form__formLabel" for="numero_telefonico">Número</label>
+          <input class="section-contact-form__formInput"
             type="number"
             name="numero_telefonico"
             placeholder="Teléfono 011 XX XX XX XX"
             id="numero_telefonico"
             min="11"
             required/>
-          <div class="input__radio">
-            <input class="input__radio--item" type="radio" name="tipo-consulta" value="pedido" id="check" required /> <label for="check">Pedido</label>
-            <input class="input__radio--item" type="radio" name="tipo-consulta" value="consulta" id="second-check" required /> <label for="second-check">Consulta</label>
+          <div class="radio-check">
+            <input class="radio-check__itemInput" type="radio" name="tipo-consulta" value="pedido" id="check" required />
+             <label class="radio-check__itemLabel" for="check">Pedido</label>
+            <input class="radio-check__itemInput" type="radio" name="tipo-consulta" value="consulta" id="second-check" required /> 
+            <label class="radio-check__itemLabel" for="second-check">Consulta</label>
           </div>
-          <textarea class="section-contact__formTextarea" name="consulta" cols="15" rows="15" placeholder="...">
+          <textarea class="section-contact-form__formTextarea" name="consulta" cols="15" rows="15" placeholder="...">
           </textarea>
 
-          <div class="section-contact__formButton">
-            <input class="section-contact__formInput section-contact__formBtn " type="submit" value="Enviar"/>
+          <div class="section-contact-form__formButton">
+            <input class="section-contact-form__formInput section-contact-form--formBtn" type="submit" value="Enviar"/>
           </div>
         </form>
       </div>
     </section>
-
+    
+    <!-- FOOTER -->
     <footer class="footer-general">
-      <p class="footer-general__text">© 2020 KARKAMAN</p>
-      <h1 class="footer-general__title"><a class="footer-general__titleLink" href="../index.html">KarkamaN</a></h1>
+      <p class="footer-general__text" name="keywords" content="shoes of leather, zapatos de cuero, borcegos de cuero, zapatos de charol, botas de cuero, mocasines de cuero, calzados para hombres, zapatos, botas, mocasines, zapatos de vestir, fabricantes de calzado, fabrica de calzado, envios a todo el pais, envios gratis">© 2020 KARKAMAN</p>
+      <p class="footer-general__title" name="keywords" content="shoes of leather, zapatos de cuero, borcegos de cuero, zapatos de charol, botas de cuero, mocasines de cuero, calzados para hombres, zapatos, botas, mocasines, zapatos de vestir, fabricantes de calzado, fabrica de calzado, envios a todo el pais, envios gratis"><a class="footer-general__titleLink" href="../index.html">KARKAMAN</a></p> 
       <ul class="footer-general__list">
       <li class="footer-general__listItem">
          <a class="footer-general__listLink" href="https://www.instagram.com/zapatos.karkaman/" target="BLANK">
@@ -153,7 +161,6 @@
       </li>
      </ul>
    </footer>
-
 
   </body>
 </html>

@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     background: $negro;
     color: white;
@@ -15,23 +16,30 @@ html{
     
     font-size: 16px;
 }
+
 h1{
     font-size: 2.7rem;
 }
+
 h2{
     font-size: 2.6rem;
 }
+
 h3{
     font-size: 2rem;
 }
+
 h4{
     font-size:2rem
 }
+
 p{
-    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 0;
+    font-size:1.2rem
 }
 
-li {
+li{
     list-style: none;
 }
 
@@ -44,6 +52,7 @@ body{
         width: auto;
     }
 }
+
 .container{
     width: 80%;
     margin: auto;
@@ -70,6 +79,7 @@ body{
     padding-bottom: 1rem;
     font-size: 2rem;
     font-weight: 400;
+    text-transform: uppercase;
     @media  screen and (max-width: 767px){
         margin-top: 2rem;
         font-size: 1.5rem;

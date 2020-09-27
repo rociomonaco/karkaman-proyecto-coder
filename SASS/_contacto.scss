@@ -53,14 +53,14 @@
     }
 }
 
-/*SECTION-CONSULTA*/
-.section-contact__block{
+/*SECTION-CONTACT-FORM*/
+.section-contact-form__block{
     margin: 3rem;
     @media  screen and (max-width: 767px){
         margin: 4rem 2rem;
     }
 
-    .section-contact__form{
+    .section-contact-form__form{
         margin: auto;
         width: 25%;
         padding: 2rem;
@@ -75,8 +75,8 @@
             width: 500px;
         }
 
-        .section-contact__formInput,
-        .section-contact__formTextarea{
+        .section-contact-form__formInput,
+        .section-contact-form__formTextarea{
             background-color:transparent;
             color: white;
             margin: 1rem 0;
@@ -88,7 +88,7 @@
             }
         }
         
-        .section-contact__formInput{
+        .section-contact-form__formInput{
             border:none;
             border-bottom:$borde;
             &:active{
@@ -96,6 +96,8 @@
                 color: white;
             }
         }
+
+        /*PREDETERMINADO*/
         input:-webkit-autofill{
             -webkit-text-fill-color: white;
             -webkit-box-shadow: 0 0 0px 1000px $negro inset;
@@ -104,8 +106,9 @@
         input[type="number"]::-webkit-inner-spin-button{ 
             -webkit-appearance: none;
         }
+        /*PREDETERMINADO*/
         
-        .input__radio{
+        .radio-check{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -113,14 +116,15 @@
             @media  screen and (max-width: 767px){
                 flex-direction: column;
             }
-            input[type="radio"]{
+            /*input[type="radio"]*/
+            .radio-check__itemInput{
                 display: none;
-                &:checked + label{
+                &:checked + .radio-check__itemLabel{
                     background-color:$amarillo;
                     color: $negro;
                     position: relative;
                 }
-                &:checked + label::before{
+                &:checked + .radio-check__itemLabel::before{
                     height: 0.4rem;
                     width:  0.4rem;
                     margin: auto;
@@ -128,7 +132,7 @@
                     position: absolute;
                 }
             }
-            label{
+            .radio-check__itemLabel{
                 display: inline-block;
                 position: relative;
                 padding: 0.5rem 1rem 0.5rem 2rem;
@@ -153,35 +157,47 @@
                     border-radius: 50%;
                     position: absolute;
                     left: 0.5rem;
-
                 }
             }
         }
-        .section-contact__formTextarea{
-            resize: vertical;
-            max-height: 200px;
-            min-height: 100px;
+
+        .section-contact-form__formTextarea{
+            resize: none;
+            max-height: 300px;
             color: white;
             font-family: "Open Sans", sans-serif;
+
+            /*SCROLL PERSONALIZADO*/
+            &::-webkit-scrollbar{
+                width: 0.5rem;
+            }
+            &::-webkit-scrollbar-corner{
+                display: none;
+            }
+            &::-webkit-scrollbar-thumb{
+                background-color: $amarillo;
+                border-radius: 1rem;
+            }
         }
-        .section-contact__formButton{
-            .section-contact__formBtn{
+        .section-contact-form__formButton{
+            .section-contact-form--formBtn{
                 font-size:1rem;
                 padding:1rem;
                 background: $negro;
                 transition: all 0.5s;
+                margin-bottom: 0;
+                margin-top: 2rem;
                 &:hover{
-                    transform: scale(1.1);
                     background:$amarillo;
                     color: $negro;
                 }
             }
         }
-        .section-contact__formBtn,
-        .section-contact__formTextarea{
+        .section-contact-form--formBtn,
+        .section-contact-form__formTextarea{
             border-radius: 1rem;
             border: $borde;
-            margin: 2rem 0;
+
             @media  screen and (max-width: 767px){
                 margin: 1rem 0;
             }

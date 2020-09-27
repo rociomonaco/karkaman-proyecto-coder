@@ -5,16 +5,6 @@ $negro: #111;
 $fuentePrincipal:'Open Sans', sans-serif;
 $funteTituloIndex:'Julius Sans One', sans-serif;
 $borde: solid #F1D302 1px;
-/*
-$color-footer: 3;
-$menu-item:(
-    inicio: $amarillo,
-    catalogo: #F1D302,
-    nosotros: #ffff80,
-    preguntas: #999900,
-    contacto: #ffff00,
-);
-*/
 
 @import "general";
 @import "index";
@@ -173,17 +163,7 @@ $menu-item:(
             text-transform: uppercase;
             color: black;
             font-size:2rem;
-            /*IF ELSE 
-            @if $color-footer==2 {
-                color:#111;
-            }
-            @else if $color-footer>2{
-                color: green;
-            }
-            @else if $color-footer<2{
-                text-decoration:underline;
-            }
-            IF ELSE*/
+
             &:hover{
                 text-transform: uppercase;
                 color: black;
@@ -210,43 +190,35 @@ $menu-item:(
     }
 }
 
-p{
-    line-height: 1.5rem;
-    margin-bottom: 0;
-    font-size:1.2rem
-}
 
- /*PLACEHOLDER*/
+/*PLACEHOLDER*/
+
 %img-hover{
     position: relative;
+
     @media  screen and (max-width: 767px){
         width: 100%;
     }
     @media  screen and (min-width: 768px) and (max-width: 1199px){
         width: 30%;
     }
-
     .block-hover{
         color: white;
         display: none;
         width: 100%;
-        height: 100%;  
+        height: 100%; 
 
         button{
             display: none;
             &:hover{
             transform: scale(1.1);
             }
-            &:focus{
-                outline: none;
-                box-shadow: none;
-            }
+            @extend %focus;
         }
     }  
 }
 
 %hover{
-    
     &:hover .block-hover{
         position: absolute;
         display: flex;
@@ -254,8 +226,7 @@ p{
         justify-content: center;
         align-items: center;
         background: rgba(0, 0, 0, 0.5);
-        transition: all 0.5s linear; 
-        
+       
         button{
             background: $amarillo;
             border-radius: 1rem;
@@ -274,17 +245,12 @@ p{
         }
     }
 }
-/*PLACEHOLDER*/
-
-/*MIXIN
-@mixin flex ($direction, $wrap, $justify,$align-items){
-    display: flex;
-    flex-direction: $direction;
-    flex-wrap: $wrap;
-    justify-content: $justify;
-    align-items: $align-items;
+%focus{
+    &:focus{
+        outline: none;
+    }
 }
-*/
+
 @import "catalogo";
 @import "nosotros";
 @import"preguntas-frecuentes";

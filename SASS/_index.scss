@@ -65,6 +65,8 @@
                 &:hover{
                     transform: scale(1.2);
                 }
+                @extend %focus;
+                
             }
         }
     }
@@ -104,11 +106,10 @@
                 color:$amarillo;
                 text-transform: uppercase;
                 font-weight: 600; 
-                padding-bottom: 2rem;
+                padding-bottom: 0.5rem;
                 
                 @media  screen and (max-width: 767px){
                     font-size: 1.8rem;
-                    padding-bottom: 0.5rem;
                 }
             }
             .section-marca-envios-showroom__text{
@@ -118,15 +119,11 @@
                 
                 @media  screen and (max-width: 767px){
                     padding: 0;
-
                     font-size: 1.2rem;
                 }
                 .section-marca-envios-showroom__textLink{
                     text-decoration: none;
-                    transition: text-decoration 1s linear;
-                    &:hover{
-                        text-decoration: underline;
-                    }
+
                 }
                 .section-marca-envios-showroom__textLink,
                 .section-marca-envios-showroom__textStrong{
@@ -177,124 +174,53 @@
         }
     }
 }
+
+
 /*SECTION-CUSTOMER*/
 .section-customer{
-    margin-top: 5rem ;
-
-    @media  screen and (min-width: 280px) and (max-width: 1199px){
+    margin-top: 5rem;
+    @media  screen and (max-width: 767px){
         margin-top: 2rem;
     }
-
     .carousel{
-        width: 70%;
         margin: auto;
-        @media  screen and (min-width: 280px) and (max-width: 1199px){
-            width: auto;
-        }
         .carousel-inner{
-           height: 220px;
-           @media  screen and (min-width: 280px) and (max-width: 1199px){
-            height: 350px;
-              
-           }
             .carousel-item{
-                margin-top:12rem;
-                
-                @media  screen and (min-width: 768px) and (max-width: 1199px){
-                    margin-top: 16rem;
-                }
-                @media  screen and (max-width: 767px){
-                    margin-top: 20rem;
-                }
                 .carousel-caption{
-                    z-index: 1;
-                    color:white;
-                    padding: 0;
-                    p:first-child{
-                        color: $amarillo;
-                        font-size: 1.5rem;
-                        padding-bottom: 1rem; 
+                    position: static;
+                    width: 80%;
+                    margin: auto;
+                    @media  screen and (max-width: 767px){
+                        width: 70%;
                     }
-                    .mobile:first-child{
-                        @media  screen and (max-width: 767px){
-                           padding:4rem 0 0 0;  
-                           height: 5px;             
-                        }
-                        &:nth-child(2){
-                            padding-top: 2rem;
-                        }
-                    }
-
-                    p:nth-child(2){
+                    h5{
                         font-size: 1.3rem;
+                        color: $amarillo;
+                    }
+                    p{
+                        margin-bottom:1.2rem;
+
                     }
                 }
             }
-        }
-        .carousel-control-prev,
-        .carousel-control-next{
-            width: auto;
         }
         .fa-chevron-left,
         .fa-chevron-right{
             color: $amarillo;
             font-size: 2rem;
         }
-
         .carousel-indicators{
             z-index:1;
             li{
-                background-color: $amarillo;
+             background-color: $amarillo;
             }
         }
+    
     }
 }
 
 
-/*SECTION-CUSTOMER*//*
-.section-customer{
-    margin: 5rem 0; 
-    @media  screen and (max-width: 767px){
-        margin: 3rem 0;
-    }
-    .container{
-        display: flex;
-        @media  screen and (min-width: 768px) and (max-width: 1199px){
-            justify-content: space-evenly;
-        }
-        .section-customer__article{
-            margin: 1rem 0;
-            padding:2rem; 
-            border-left: $borde;
-            @media  screen and (max-width: 767px){
-                margin:  2rem 0;
-                padding: 0 0.5rem;
-            }
 
-            .section-customer__title,.section-customer__text{
-                text-align: center;
-                padding: 0.5rem; 
-            }
-            .section-customer__title{
-                color: $amarillo;  
-                font-weight: 500;
-                @media  screen and (max-width: 767px){
-                    font-size: 1.8rem;
-                }
-            }
-            .section-customer__text{
-              line-height: 2rem; 
-            }
-        }
-    }
-    .flex-customer-mobile{
-        @media  screen and (max-width: 767px){
-            display: flex;
-            flex-direction: column;
-        }
-    }
-
-}*/
 /*NEWSLETTER*/
 .section-newsletter{
     .section-newsletter__form{
@@ -314,6 +240,12 @@
                 background: $negro;
                 border:$borde; 
                 color: white;
+                @extend %focus;
+
+                &:-webkit-autofill{
+                    -webkit-text-fill-color: white;
+                    -webkit-box-shadow: 0 0 0px 1000px $negro inset;
+                }
             }
             .section-newsletter__formMail{
                 width: 30%;
@@ -329,8 +261,8 @@
                 &:hover{
                     background: $amarillo;
                     color: black;
-                    transform: scale(1.1);
                 }
+                @extend %focus;
             }
         }
     }

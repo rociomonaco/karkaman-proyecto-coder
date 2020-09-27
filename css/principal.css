@@ -1,14 +1,4 @@
 /*VARIABLES*/
-/*
-$color-footer: 3;
-$menu-item:(
-    inicio: $amarillo,
-    catalogo: #F1D302,
-    nosotros: #ffff80,
-    preguntas: #999900,
-    contacto: #ffff00,
-);
-*/
 /*GENERAL*/
 * {
   margin: 0;
@@ -43,7 +33,9 @@ h4 {
 }
 
 p {
-  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 0;
+  font-size: 1.2rem;
 }
 
 li {
@@ -89,6 +81,7 @@ a {
   padding-bottom: 1rem;
   font-size: 2rem;
   font-weight: 400;
+  text-transform: uppercase;
 }
 @media screen and (max-width: 767px) {
   .subtitle {
@@ -225,12 +218,11 @@ a {
   color: #fbe555;
   text-transform: uppercase;
   font-weight: 600;
-  padding-bottom: 2rem;
+  padding-bottom: 0.5rem;
 }
 @media screen and (max-width: 767px) {
   .section-marca-envios-showroom .container .section-marca-envios-showroom__article .section-marca-envios-showroom__title {
     font-size: 1.8rem;
-    padding-bottom: 0.5rem;
   }
 }
 .section-marca-envios-showroom .container .section-marca-envios-showroom__article .section-marca-envios-showroom__text {
@@ -246,12 +238,6 @@ a {
 }
 .section-marca-envios-showroom .container .section-marca-envios-showroom__article .section-marca-envios-showroom__text .section-marca-envios-showroom__textLink {
   text-decoration: none;
-  transition: -webkit-text-decoration 1s linear;
-  transition: text-decoration 1s linear;
-  transition: text-decoration 1s linear, -webkit-text-decoration 1s linear;
-}
-.section-marca-envios-showroom .container .section-marca-envios-showroom__article .section-marca-envios-showroom__text .section-marca-envios-showroom__textLink:hover {
-  text-decoration: underline;
 }
 .section-marca-envios-showroom .container .section-marca-envios-showroom__article .section-marca-envios-showroom__text .section-marca-envios-showroom__textLink,
 .section-marca-envios-showroom .container .section-marca-envios-showroom__article .section-marca-envios-showroom__text .section-marca-envios-showroom__textStrong {
@@ -302,66 +288,30 @@ a {
 .section-customer {
   margin-top: 5rem;
 }
-@media screen and (min-width: 280px) and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .section-customer {
     margin-top: 2rem;
   }
 }
 .section-customer .carousel {
-  width: 70%;
   margin: auto;
 }
-@media screen and (min-width: 280px) and (max-width: 1199px) {
-  .section-customer .carousel {
-    width: auto;
-  }
-}
-.section-customer .carousel .carousel-inner {
-  height: 220px;
-}
-@media screen and (min-width: 280px) and (max-width: 1199px) {
-  .section-customer .carousel .carousel-inner {
-    height: 350px;
-  }
-}
-.section-customer .carousel .carousel-inner .carousel-item {
-  margin-top: 12rem;
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .section-customer .carousel .carousel-inner .carousel-item {
-    margin-top: 16rem;
-  }
-}
-@media screen and (max-width: 767px) {
-  .section-customer .carousel .carousel-inner .carousel-item {
-    margin-top: 20rem;
-  }
-}
 .section-customer .carousel .carousel-inner .carousel-item .carousel-caption {
-  z-index: 1;
-  color: white;
-  padding: 0;
-}
-.section-customer .carousel .carousel-inner .carousel-item .carousel-caption p:first-child {
-  color: #fbe555;
-  font-size: 1.5rem;
-  padding-bottom: 1rem;
+  position: static;
+  width: 80%;
+  margin: auto;
 }
 @media screen and (max-width: 767px) {
-  .section-customer .carousel .carousel-inner .carousel-item .carousel-caption .mobile:first-child {
-    padding: 4rem 0 0 0;
-    height: 5px;
+  .section-customer .carousel .carousel-inner .carousel-item .carousel-caption {
+    width: 70%;
   }
 }
-.section-customer .carousel .carousel-inner .carousel-item .carousel-caption .mobile:first-child:nth-child(2) {
-  padding-top: 2rem;
-}
-.section-customer .carousel .carousel-inner .carousel-item .carousel-caption p:nth-child(2) {
+.section-customer .carousel .carousel-inner .carousel-item .carousel-caption h5 {
   font-size: 1.3rem;
+  color: #fbe555;
 }
-.section-customer .carousel .carousel-control-prev,
-.section-customer .carousel .carousel-control-next {
-  width: auto;
+.section-customer .carousel .carousel-inner .carousel-item .carousel-caption p {
+  margin-bottom: 1.2rem;
 }
 .section-customer .carousel .fa-chevron-left,
 .section-customer .carousel .fa-chevron-right {
@@ -375,51 +325,6 @@ a {
   background-color: #fbe555;
 }
 
-/*SECTION-CUSTOMER*/
-/*
-.section-customer{
-    margin: 5rem 0; 
-    @media  screen and (max-width: 767px){
-        margin: 3rem 0;
-    }
-    .container{
-        display: flex;
-        @media  screen and (min-width: 768px) and (max-width: 1199px){
-            justify-content: space-evenly;
-        }
-        .section-customer__article{
-            margin: 1rem 0;
-            padding:2rem; 
-            border-left: $borde;
-            @media  screen and (max-width: 767px){
-                margin:  2rem 0;
-                padding: 0 0.5rem;
-            }
-
-            .section-customer__title,.section-customer__text{
-                text-align: center;
-                padding: 0.5rem; 
-            }
-            .section-customer__title{
-                color: $amarillo;  
-                font-weight: 500;
-                @media  screen and (max-width: 767px){
-                    font-size: 1.8rem;
-                }
-            }
-            .section-customer__text{
-              line-height: 2rem; 
-            }
-        }
-    }
-    .flex-customer-mobile{
-        @media  screen and (max-width: 767px){
-            display: flex;
-            flex-direction: column;
-        }
-    }
-
-}*/
 /*NEWSLETTER*/
 .section-newsletter .section-newsletter__form .section-newsletter__formFlex {
   display: flex;
@@ -441,6 +346,10 @@ a {
   border: solid #F1D302 1px;
   color: white;
 }
+.section-newsletter .section-newsletter__form .section-newsletter__formFlex input:-webkit-autofill {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px #111 inset;
+}
 .section-newsletter .section-newsletter__form .section-newsletter__formFlex .section-newsletter__formMail {
   width: 30%;
 }
@@ -457,7 +366,6 @@ a {
 .section-newsletter .section-newsletter__form .section-newsletter__formFlex .section-newsletter__formSubscribite:hover {
   background: #fbe555;
   color: black;
-  transform: scale(1.1);
 }
 
 /*HEADER*/
@@ -611,17 +519,6 @@ a {
   text-transform: uppercase;
   color: black;
   font-size: 2rem;
-  /*IF ELSE 
-  @if $color-footer==2 {
-      color:#111;
-  }
-  @else if $color-footer>2{
-      color: green;
-  }
-  @else if $color-footer<2{
-      text-decoration:underline;
-  }
-  IF ELSE*/
 }
 .footer-general .footer-general__title .footer-general__titleLink:hover {
   text-transform: uppercase;
@@ -640,12 +537,6 @@ a {
 }
 .footer-general .footer-general__list .footer-general__listItem .footer-general__listLink:hover {
   color: black;
-}
-
-p {
-  line-height: 1.5rem;
-  margin-bottom: 0;
-  font-size: 1.2rem;
 }
 
 /*PLACEHOLDER*/
@@ -674,10 +565,6 @@ p {
 .catalogo .catalogo__list .catalogo__listItem .block-hover button:hover, .section-prod-dest .section-prod-dest__list .section-prod-dest__listItem .block-hover button:hover {
   transform: scale(1.1);
 }
-.catalogo .catalogo__list .catalogo__listItem .block-hover button:focus, .section-prod-dest .section-prod-dest__list .section-prod-dest__listItem .block-hover button:focus {
-  outline: none;
-  box-shadow: none;
-}
 
 .catalogo .catalogo__list .catalogo__listItem:hover .block-hover, .section-prod-dest .section-prod-dest__list .section-prod-dest__listItem:hover .block-hover {
   position: absolute;
@@ -686,7 +573,6 @@ p {
   justify-content: center;
   align-items: center;
   background: rgba(0, 0, 0, 0.5);
-  transition: all 0.5s linear;
 }
 .catalogo .catalogo__list .catalogo__listItem:hover .block-hover button, .section-prod-dest .section-prod-dest__list .section-prod-dest__listItem:hover .block-hover button {
   background: #fbe555;
@@ -705,16 +591,10 @@ p {
   text-decoration: none;
 }
 
-/*PLACEHOLDER*/
-/*MIXIN
-@mixin flex ($direction, $wrap, $justify,$align-items){
-    display: flex;
-    flex-direction: $direction;
-    flex-wrap: $wrap;
-    justify-content: $justify;
-    align-items: $align-items;
+.header-index .header-index__title .header-index__titleBoton .header-index__titleBotonBack:focus, .section-newsletter .section-newsletter__form .section-newsletter__formFlex input:focus, .section-newsletter .section-newsletter__form .section-newsletter__formFlex .section-newsletter__formSubscribite:focus, .catalogo .catalogo__list .catalogo__listItem .block-hover button:focus, .section-prod-dest .section-prod-dest__list .section-prod-dest__listItem .block-hover button:focus {
+  outline: none;
 }
-*/
+
 /*CATALOGO*/
 .back-principal-section {
   padding-top: 2rem;
@@ -732,7 +612,6 @@ p {
 
 .catalogo .catalogo__list {
   margin: 5rem;
-  /* @include flex(row, wrap, center, none);*/
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -754,7 +633,6 @@ p {
   display: flex;
   align-content: center;
   justify-content: center;
-  transition: all 1s;
 }
 @media screen and (max-width: 767px) {
   .catalogo .catalogo__list .catalogo__listItem {
@@ -843,6 +721,10 @@ p {
 }
 .section-nosotros__block .section-nosotros__article {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .section-nosotros__block .section-nosotros__article p:first-child {
   padding-top: 0;
@@ -972,15 +854,13 @@ p {
   font-size: 1.3rem;
 }
 .section-preguntas-frecuentes .section-preguntas-frecuentes__container .section-preguntas-frecuentes__article .section-preguntas-frecuentes__paylist .section-preguntas-frecuentes__payItem {
-  padding: 1rem;
-}
-@media screen and (max-width: 767px) {
-  .section-preguntas-frecuentes .section-preguntas-frecuentes__container .section-preguntas-frecuentes__article .section-preguntas-frecuentes__paylist .section-preguntas-frecuentes__payItem {
-    padding-top: 0;
-  }
+  margin: 1rem 0;
 }
 .section-preguntas-frecuentes .section-preguntas-frecuentes__container .section-preguntas-frecuentes__article .section-preguntas-frecuentes__paylist .section-preguntas-frecuentes__payItem .section-preguntas-frecuentes__payItemIcon {
   font-size: 5rem;
+}
+.section-preguntas-frecuentes .section-preguntas-frecuentes__container .section-preguntas-frecuentes__article .section-preguntas-frecuentes__paylist .section-preguntas-frecuentes__payItem .section-preguntas-frecuentes__payItemIcon--img {
+  border-radius: 10px;
 }
 .section-preguntas-frecuentes .section-preguntas-frecuentes__container .section-preguntas-frecuentes__article .section-preguntas-frecuentes__paylist .section-preguntas-frecuentes__payItemtext .section-preguntas-frecuentes__payItemtextLink {
   color: white;
@@ -1044,36 +924,38 @@ p {
   }
 }
 
-/*SECTION-CONSULTA*/
-.section-contact__block {
+/*SECTION-CONTACT-FORM*/
+.section-contact-form__block {
   margin: 3rem;
 }
 @media screen and (max-width: 767px) {
-  .section-contact__block {
+  .section-contact-form__block {
     margin: 4rem 2rem;
   }
 }
-.section-contact__block .section-contact__form {
+.section-contact-form__block .section-contact-form__form {
   margin: auto;
   width: 25%;
   padding: 2rem;
   border: solid #F1D302 1px;
   border-radius: 1.5rem;
   background-color: #111;
+  /*PREDETERMINADO*/
+  /*PREDETERMINADO*/
 }
 @media screen and (max-width: 767px) {
-  .section-contact__block .section-contact__form {
+  .section-contact-form__block .section-contact-form__form {
     padding: 1rem;
     width: 90%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .section-contact__block .section-contact__form {
+  .section-contact-form__block .section-contact-form__form {
     width: 500px;
   }
 }
-.section-contact__block .section-contact__form .section-contact__formInput,
-.section-contact__block .section-contact__form .section-contact__formTextarea {
+.section-contact-form__block .section-contact-form__form .section-contact-form__formInput,
+.section-contact-form__block .section-contact-form__form .section-contact-form__formTextarea {
   background-color: transparent;
   color: white;
   margin: 1rem 0;
@@ -1081,53 +963,54 @@ p {
   display: block;
   width: 100%;
 }
-.section-contact__block .section-contact__form .section-contact__formInput:focus,
-.section-contact__block .section-contact__form .section-contact__formTextarea:focus {
+.section-contact-form__block .section-contact-form__form .section-contact-form__formInput:focus,
+.section-contact-form__block .section-contact-form__form .section-contact-form__formTextarea:focus {
   outline: none;
 }
-.section-contact__block .section-contact__form .section-contact__formInput {
+.section-contact-form__block .section-contact-form__form .section-contact-form__formInput {
   border: none;
   border-bottom: solid #F1D302 1px;
 }
-.section-contact__block .section-contact__form .section-contact__formInput:active {
+.section-contact-form__block .section-contact-form__form .section-contact-form__formInput:active {
   background-color: #111;
   color: white;
 }
-.section-contact__block .section-contact__form input:-webkit-autofill {
+.section-contact-form__block .section-contact-form__form input:-webkit-autofill {
   -webkit-text-fill-color: white;
   -webkit-box-shadow: 0 0 0px 1000px #111 inset;
 }
-.section-contact__block .section-contact__form input[type=number]::-webkit-outer-spin-button,
-.section-contact__block .section-contact__form input[type=number]::-webkit-inner-spin-button {
+.section-contact-form__block .section-contact-form__form input[type=number]::-webkit-outer-spin-button,
+.section-contact-form__block .section-contact-form__form input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
-.section-contact__block .section-contact__form .input__radio {
+.section-contact-form__block .section-contact-form__form .radio-check {
   display: flex;
   justify-content: center;
   align-items: center;
   width: auto;
+  /*input[type="radio"]*/
 }
 @media screen and (max-width: 767px) {
-  .section-contact__block .section-contact__form .input__radio {
+  .section-contact-form__block .section-contact-form__form .radio-check {
     flex-direction: column;
   }
 }
-.section-contact__block .section-contact__form .input__radio input[type=radio] {
+.section-contact-form__block .section-contact-form__form .radio-check .radio-check__itemInput {
   display: none;
 }
-.section-contact__block .section-contact__form .input__radio input[type=radio]:checked + label {
+.section-contact-form__block .section-contact-form__form .radio-check .radio-check__itemInput:checked + .radio-check__itemLabel {
   background-color: #fbe555;
   color: #111;
   position: relative;
 }
-.section-contact__block .section-contact__form .input__radio input[type=radio]:checked + label::before {
+.section-contact-form__block .section-contact-form__form .radio-check .radio-check__itemInput:checked + .radio-check__itemLabel::before {
   height: 0.4rem;
   width: 0.4rem;
   margin: auto;
   border: 7px solid #111;
   position: absolute;
 }
-.section-contact__block .section-contact__form .input__radio label {
+.section-contact-form__block .section-contact-form__form .radio-check .radio-check__itemLabel {
   display: inline-block;
   position: relative;
   padding: 0.5rem 1rem 0.5rem 2rem;
@@ -1139,11 +1022,11 @@ p {
   cursor: pointer;
 }
 @media screen and (max-width: 767px) {
-  .section-contact__block .section-contact__form .input__radio label {
+  .section-contact-form__block .section-contact-form__form .radio-check .radio-check__itemLabel {
     margin: 0.5rem;
   }
 }
-.section-contact__block .section-contact__form .input__radio label::before {
+.section-contact-form__block .section-contact-form__form .radio-check .radio-check__itemLabel::before {
   content: "";
   width: 0.8rem;
   height: 0.8rem;
@@ -1155,33 +1038,43 @@ p {
   position: absolute;
   left: 0.5rem;
 }
-.section-contact__block .section-contact__form .section-contact__formTextarea {
-  resize: vertical;
-  max-height: 200px;
-  min-height: 100px;
+.section-contact-form__block .section-contact-form__form .section-contact-form__formTextarea {
+  resize: none;
+  max-height: 300px;
   color: white;
   font-family: "Open Sans", sans-serif;
+  /*SCROLL PERSONALIZADO*/
 }
-.section-contact__block .section-contact__form .section-contact__formButton .section-contact__formBtn {
+.section-contact-form__block .section-contact-form__form .section-contact-form__formTextarea::-webkit-scrollbar {
+  width: 0.5rem;
+}
+.section-contact-form__block .section-contact-form__form .section-contact-form__formTextarea::-webkit-scrollbar-corner {
+  display: none;
+}
+.section-contact-form__block .section-contact-form__form .section-contact-form__formTextarea::-webkit-scrollbar-thumb {
+  background-color: #fbe555;
+  border-radius: 1rem;
+}
+.section-contact-form__block .section-contact-form__form .section-contact-form__formButton .section-contact-form--formBtn {
   font-size: 1rem;
   padding: 1rem;
   background: #111;
   transition: all 0.5s;
+  margin-bottom: 0;
+  margin-top: 2rem;
 }
-.section-contact__block .section-contact__form .section-contact__formButton .section-contact__formBtn:hover {
-  transform: scale(1.1);
+.section-contact-form__block .section-contact-form__form .section-contact-form__formButton .section-contact-form--formBtn:hover {
   background: #fbe555;
   color: #111;
 }
-.section-contact__block .section-contact__form .section-contact__formBtn,
-.section-contact__block .section-contact__form .section-contact__formTextarea {
+.section-contact-form__block .section-contact-form__form .section-contact-form--formBtn,
+.section-contact-form__block .section-contact-form__form .section-contact-form__formTextarea {
   border-radius: 1rem;
   border: solid #F1D302 1px;
-  margin: 2rem 0;
 }
 @media screen and (max-width: 767px) {
-  .section-contact__block .section-contact__form .section-contact__formBtn,
-.section-contact__block .section-contact__form .section-contact__formTextarea {
+  .section-contact-form__block .section-contact-form__form .section-contact-form--formBtn,
+.section-contact-form__block .section-contact-form__form .section-contact-form__formTextarea {
     margin: 1rem 0;
   }
 }
