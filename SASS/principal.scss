@@ -149,7 +149,7 @@ $borde: solid #F1D302 1px;
     align-items: center;
     @media  screen and (max-width: 767px){
         flex-direction: column;
-        padding: 0;
+        padding: 0.5rem;
     }
     .footer-general__text{
         color: black;

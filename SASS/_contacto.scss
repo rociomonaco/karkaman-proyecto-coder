@@ -11,10 +11,14 @@
     text-align:center; 
 
     @media  screen and (max-width: 767px){
-        margin:3rem 0;
+        margin:2rem 0;
+        width: auto;
     }
     .section-location__block{
         margin: 2rem; 
+        @media  screen and (max-width: 767px){
+            margin: 1rem;
+        }
 
         .section-location__blockIframe{
             @media  screen and (max-width: 767px){
@@ -36,6 +40,9 @@
         justify-content:center;
         align-items:center; 
         margin: 5rem 0;
+        @media  screen and (max-width: 767px){
+            margin: 2rem 0;
+        }
     }
     .section-redes__listItem{
         transition: all 0.5s;
@@ -57,7 +64,7 @@
 .section-contact-form__block{
     margin: 3rem;
     @media  screen and (max-width: 767px){
-        margin: 4rem 2rem;
+        margin: 2rem 0.5rem;
     }
 
     .section-contact-form__form{
