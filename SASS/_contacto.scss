@@ -113,6 +113,9 @@
         input[type="number"]::-webkit-inner-spin-button{ 
             -webkit-appearance: none;
         }
+        input[type="submit"]{
+            -webkit-appearance: none;
+        }
         /*PREDETERMINADO*/
         
         .radio-check{
@@ -198,7 +201,6 @@
         }
         
         .section-contact-form__formInput--btn{
-            -webkit-appearance: none;
             font-size:1rem;
             padding:1rem;
             background: $negro;
