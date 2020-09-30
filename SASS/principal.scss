@@ -233,13 +233,11 @@ $borde: solid #F1D302 1px;
             padding: 0.5rem;
             margin-top: 0.5rem;
             transition:  all 0.5s;
-            a{
-                color: black;
-                display: block;
-            }
         }
+        
         a{
             text-decoration: none;
+            color: black;
         }
     }
 }

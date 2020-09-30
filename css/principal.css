@@ -584,12 +584,9 @@ a {
   margin-top: 0.5rem;
   transition: all 0.5s;
 }
-.catalogo .catalogo__list .catalogo__listItem:hover .block-hover button a, .section-prod-dest .section-prod-dest__list .section-prod-dest__listItem:hover .block-hover button a {
-  color: black;
-  display: block;
-}
 .catalogo .catalogo__list .catalogo__listItem:hover .block-hover a, .section-prod-dest .section-prod-dest__list .section-prod-dest__listItem:hover .block-hover a {
   text-decoration: none;
+  color: black;
 }
 
 .header-index .header-index__title .header-index__titleBoton .header-index__titleBotonBack:focus, .section-newsletter .section-newsletter__form .section-newsletter__formFlex input:focus, .section-newsletter .section-newsletter__form .section-newsletter__formFlex .section-newsletter__formSubscribite:focus, .catalogo .catalogo__list .catalogo__listItem .block-hover button:focus, .section-prod-dest .section-prod-dest__list .section-prod-dest__listItem .block-hover button:focus {
@@ -620,7 +617,7 @@ a {
 }
 @media screen and (max-width: 767px) {
   .catalogo .catalogo__list {
-    margin: 2rem;
+    margin: 1rem 0;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -638,6 +635,8 @@ a {
 @media screen and (max-width: 767px) {
   .catalogo .catalogo__list .catalogo__listItem {
     width: 100%;
+    padding: 0.5rem;
+    margin: 0;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1067,7 +1066,18 @@ a {
   background-color: #fbe555;
   border-radius: 1rem;
 }
-.section-contact-form__block .section-contact-form__form .section-contact-form__formButton .section-contact-form--formBtn {
+.section-contact-form__block .section-contact-form__form .section-contact-form__formTextarea,
+.section-contact-form__block .section-contact-form__form .section-contact-form__formInput--btn {
+  border-radius: 1rem;
+  border: solid #F1D302 1px;
+}
+@media screen and (max-width: 767px) {
+  .section-contact-form__block .section-contact-form__form .section-contact-form__formTextarea,
+.section-contact-form__block .section-contact-form__form .section-contact-form__formInput--btn {
+    margin: 1rem 0;
+  }
+}
+.section-contact-form__block .section-contact-form__form .section-contact-form__formInput--btn {
   font-size: 1rem;
   padding: 1rem;
   background: #111;
@@ -1075,18 +1085,7 @@ a {
   margin-bottom: 0;
   margin-top: 2rem;
 }
-.section-contact-form__block .section-contact-form__form .section-contact-form__formButton .section-contact-form--formBtn:hover {
+.section-contact-form__block .section-contact-form__form .section-contact-form__formInput--btn:hover {
   background: #fbe555;
   color: #111;
-}
-.section-contact-form__block .section-contact-form__form .section-contact-form--formBtn,
-.section-contact-form__block .section-contact-form__form .section-contact-form__formTextarea {
-  border-radius: 1rem;
-  border: solid #F1D302 1px;
-}
-@media screen and (max-width: 767px) {
-  .section-contact-form__block .section-contact-form__form .section-contact-form--formBtn,
-.section-contact-form__block .section-contact-form__form .section-contact-form__formTextarea {
-    margin: 1rem 0;
-  }
 }

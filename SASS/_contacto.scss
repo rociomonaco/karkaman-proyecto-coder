@@ -186,27 +186,28 @@
                 border-radius: 1rem;
             }
         }
-        .section-contact-form__formButton{
-            .section-contact-form--formBtn{
-                font-size:1rem;
-                padding:1rem;
-                background: $negro;
-                transition: all 0.5s;
-                margin-bottom: 0;
-                margin-top: 2rem;
-                &:hover{
-                    background:$amarillo;
-                    color: $negro;
-                }
-            }
-        }
-        .section-contact-form--formBtn,
-        .section-contact-form__formTextarea{
+
+        .section-contact-form__formTextarea,
+        .section-contact-form__formInput--btn{
             border-radius: 1rem;
             border: $borde;
 
             @media  screen and (max-width: 767px){
                 margin: 1rem 0;
+            }
+        }
+        
+        .section-contact-form__formInput--btn{
+            -webkit-appearance: none;
+            font-size:1rem;
+            padding:1rem;
+            background: $negro;
+            transition: all 0.5s;
+            margin-bottom: 0;
+            margin-top: 2rem;
+            &:hover{
+                background:$amarillo;
+                color: $negro;
             }
         }
     }
