@@ -113,8 +113,9 @@
         input[type="number"]::-webkit-inner-spin-button{ 
             -webkit-appearance: none;
         }
-        input[type="submit" i]{
+        input[type="submit"]{
             -webkit-appearance: none;
+            background: $negro;
         }
         
         /*PREDETERMINADO*/
