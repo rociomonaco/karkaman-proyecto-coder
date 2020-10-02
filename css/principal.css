@@ -284,6 +284,7 @@ a {
 }
 .section-prod-dest .section-prod-dest__list .section-prod-dest__listItem .section-prod-dest__listImg {
   width: 100%;
+  align-self: center;
 }
 
 /*SECTION-CUSTOMER*/
@@ -394,6 +395,7 @@ a {
 @media screen and (min-width: 280px) and (max-width: 1199px) {
   .header-general #menu:target {
     left: 0;
+    overflow: hidden;
   }
   .header-general #menu:target .navbar__title {
     margin: 2rem;
@@ -423,7 +425,6 @@ a {
   align-items: center;
   padding: 0;
   flex-wrap: nowrap;
-  overflow: hidden;
 }
 @media screen and (min-width: 280px) and (max-width: 1199px) {
   .header-general .navbar {
@@ -647,6 +648,7 @@ a {
 }
 .catalogo .catalogo__list .catalogo__listItem .catalogo__listImg {
   width: 100%;
+  align-self: center;
 }
 .catalogo .catalogo__list .catalogo__listItem .block-hover .modal {
   color: black;
