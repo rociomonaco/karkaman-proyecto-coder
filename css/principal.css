@@ -351,7 +351,7 @@ a {
 }
 .section-newsletter .section-newsletter__form .section-newsletter__formFlex input:-webkit-autofill {
   -webkit-text-fill-color: white;
-  -webkit-box-shadow: 0 0 0px 1000px #111 inset;
+  box-shadow: 0 0 0px 1000px #111 inset;
 }
 .section-newsletter .section-newsletter__form .section-newsletter__formFlex .section-newsletter__formMail {
   width: 30%;
@@ -991,7 +991,7 @@ a {
 }
 .section-contact-form__block .section-contact-form__form input:-webkit-autofill {
   -webkit-text-fill-color: white;
-  -webkit-box-shadow: 0 0 0px 1000px #111 inset;
+  box-shadow: 0 0 0px 1000px #111 inset;
 }
 .section-contact-form__block .section-contact-form__form input[type=number]::-webkit-outer-spin-button,
 .section-contact-form__block .section-contact-form__form input[type=number]::-webkit-inner-spin-button {
