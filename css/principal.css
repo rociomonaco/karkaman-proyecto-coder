@@ -283,7 +283,7 @@ a {
   }
 }
 .section-prod-dest .section-prod-dest__list .section-prod-dest__listItem .section-prod-dest__listImg {
-  width: auto;
+  width: 100%;
   align-self: center;
 }
 
