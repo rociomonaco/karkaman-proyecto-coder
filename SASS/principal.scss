@@ -64,6 +64,9 @@ $borde: solid #F1D302 1px;
         align-items: center; 
         padding: 0;
         flex-wrap:nowrap;
+        &::-webkit-scrollbar{
+            display: none;
+        }
         @media  screen and (min-width: 280px) and (max-width: 1199px){
             position: fixed;
             top: 0;

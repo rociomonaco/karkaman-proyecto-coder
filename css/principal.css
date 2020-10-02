@@ -424,6 +424,9 @@ a {
   padding: 0;
   flex-wrap: nowrap;
 }
+.header-general .navbar::-webkit-scrollbar {
+  display: none;
+}
 @media screen and (min-width: 280px) and (max-width: 1199px) {
   .header-general .navbar {
     position: fixed;
@@ -994,6 +997,10 @@ a {
 .section-contact-form__block .section-contact-form__form input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
+.section-contact-form__block .section-contact-form__form input {
+  -webkit-appearance: none;
+  background: #111;
+}
 .section-contact-form__block .section-contact-form__form .radio-check {
   display: flex;
   justify-content: center;
@@ -1078,6 +1085,7 @@ a {
   }
 }
 .section-contact-form__block .section-contact-form__form .section-contact-form__formInput--btn {
+  -webkit-appearance: none;
   font-size: 1rem;
   padding: 1rem;
   background: #111;
