@@ -423,9 +423,7 @@ a {
   align-items: center;
   padding: 0;
   flex-wrap: nowrap;
-}
-.header-general .navbar::-webkit-scrollbar {
-  display: none;
+  overflow: hidden;
 }
 @media screen and (min-width: 280px) and (max-width: 1199px) {
   .header-general .navbar {
