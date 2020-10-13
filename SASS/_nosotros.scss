@@ -2,24 +2,19 @@
 
 /*NOSOTROS*/
 .section-nosotros__block{
-    line-height: 2rem;
-    margin-top: 5rem ;
+    margin-top: 5rem;
+    margin: auto;
+    width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: stretch;
-    margin: auto;
-    width: 80%;
-    @media  screen and (max-width: 767px){
+    @media  screen and (min-width: 280px) and (max-width: 1199px){
         flex-direction: column;
         align-items: center;
         width: 90%;
     }
-    @media  screen and (min-width: 768px) and (max-width: 1199px){
-        flex-direction: column;
-        align-items: center;
-        width: 90%;
-    }
+
     .section-nosotros__article,
     .section-nosotros__gallery{
         width: 49%;
@@ -54,10 +49,8 @@
         @media  screen and (max-width: 767px){
             width: auto;
             margin: auto;
-            padding-top: 2rem;
         }
-        @media  screen and (min-width: 768px) and (max-width: 1199px){
-            margin: auto;
+        @media  screen and (min-width: 280px) and (max-width: 1199px){
             padding-top: 2rem;
         }
         .section-nosotos__galletyImg{
@@ -72,23 +65,24 @@
     font-weight: 100;
     @media  screen and (max-width: 767px){
         font-size: 1.5rem;
-        padding: 2rem;
     }
     @media  screen and (min-width: 768px) and (max-width: 1199px){
         display: flex;
         flex-direction: column;
+    }
+    @media  screen and (min-width: 280px) and (max-width: 1199px){
         padding: 2rem;
     }
-   
+    
     .section-emprende__detail{
-        color:$amarillo;
+        color: $amarillo;
         font-size: 4rem;
         @media  screen and (max-width: 767px){
             font-size: 2.5rem;
             display: inline-block;
         }
         @media  screen and (min-width: 768px) and (max-width: 1199px){
-            font-size: 3rem ;
+            font-size: 3rem;
         }
     }
 

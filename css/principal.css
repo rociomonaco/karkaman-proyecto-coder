@@ -57,6 +57,20 @@ a {
   margin: auto;
 }
 
+.back-principal-section {
+  padding-top: 2rem;
+  background: #fbe555;
+  width: auto;
+}
+.back-principal-section .title-principal-section {
+  padding: 4rem;
+  font-weight: 500;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+}
+
 .section-title {
   padding: 4rem;
   font-weight: 500;
@@ -92,11 +106,8 @@ a {
 
 /*HEADER INDEX*/
 .header-index {
-  background: url("../imagenes/nosotros.jpeg");
+  background: url("../imagenes/nosotros.jpeg") center/cover no-repeat;
   min-height: 100vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 .header-index::before {
   content: "";
@@ -125,7 +136,6 @@ a {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  align-content: flex-end;
   font-family: "Julius Sans One", sans-serif;
 }
 @media screen and (min-width: 280px) and (max-width: 1199px) {
@@ -136,7 +146,6 @@ a {
 @media screen and (max-width: 767px) {
   .header-index .header-index__title {
     justify-content: center;
-    align-content: center;
   }
 }
 .header-index .header-index__title .header-index__titleShoes {
@@ -171,7 +180,7 @@ a {
   border-radius: 0.5rem;
   color: white;
   padding: 0.5rem;
-  transition: all 0.5s;
+  transition: transform 0.5s;
 }
 .header-index .header-index__title .header-index__titleBoton .header-index__titleBotonBack:hover {
   transform: scale(1.2);
@@ -414,7 +423,7 @@ a {
   }
 }
 .header-general .navbar {
-  background-color: rgba(2, 2, 0, 0.67);
+  background: rgba(2, 2, 0, 0.67);
   background-size: contain;
   width: 100%;
   position: fixed;
@@ -489,10 +498,6 @@ a {
   text-align: center;
   padding: 0.5rem;
   margin: 0 1rem;
-}
-.header-general .navbar .navbar__menu .navbar__menuItem .navbar__menuLink:hover {
-  text-decoration: none;
-  color: white;
 }
 
 /*FOOTER*/
@@ -596,20 +601,6 @@ a {
 }
 
 /*CATALOGO*/
-.back-principal-section {
-  padding-top: 2rem;
-  background: #fbe555;
-  width: auto;
-}
-.back-principal-section .title-principal-section {
-  padding: 4rem;
-  font-weight: 500;
-  color: black;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 2rem;
-}
-
 .catalogo .catalogo__list {
   margin: 5rem;
   display: flex;
@@ -649,6 +640,7 @@ a {
 .catalogo .catalogo__list .catalogo__listItem .catalogo__listImg {
   width: 100%;
   align-self: center;
+  /*NAVEGADOR SAFARI*/
 }
 .catalogo .catalogo__list .catalogo__listItem .block-hover .modal {
   color: black;
@@ -662,7 +654,7 @@ a {
   right: 1rem;
   top: 0;
   background: none;
-  transition: all 1s;
+  transition: color 1s;
   font-size: 2rem;
   border: none;
 }
@@ -684,7 +676,7 @@ a {
   margin: auto;
   background: rgba(0, 0, 0, 0.5);
   border-radius: 1rem;
-  transition: all 0.5s;
+  transition: background 0.5s;
   opacity: 1;
 }
 .catalogo .catalogo__list .catalogo__listItem .block-hover .modal .modal-body .carousel .carousel-control-prev:hover,
@@ -694,23 +686,15 @@ a {
 
 /*NOSOTROS*/
 .section-nosotros__block {
-  line-height: 2rem;
   margin-top: 5rem;
+  margin: auto;
+  width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: stretch;
-  margin: auto;
-  width: 80%;
 }
-@media screen and (max-width: 767px) {
-  .section-nosotros__block {
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 280px) and (max-width: 1199px) {
   .section-nosotros__block {
     flex-direction: column;
     align-items: center;
@@ -756,12 +740,10 @@ a {
   .section-nosotros__block .section-nosotros__gallery {
     width: auto;
     margin: auto;
-    padding-top: 2rem;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 280px) and (max-width: 1199px) {
   .section-nosotros__block .section-nosotros__gallery {
-    margin: auto;
     padding-top: 2rem;
   }
 }
@@ -777,13 +759,16 @@ a {
 @media screen and (max-width: 767px) {
   .section-emprende__title {
     font-size: 1.5rem;
-    padding: 2rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .section-emprende__title {
     display: flex;
     flex-direction: column;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 1199px) {
+  .section-emprende__title {
     padding: 2rem;
   }
 }
@@ -805,13 +790,8 @@ a {
 
 /*PREGUNTAS FRECUENTES*/
 .section-preguntas-frecuentes {
-  margin: 4rem 3rem;
+  margin: 4rem 3rem auto;
   text-align: center;
-}
-@media screen and (max-width: 767px) {
-  .section-preguntas-frecuentes {
-    margin: auto;
-  }
 }
 @media screen and (max-width: 767px) {
   .section-preguntas-frecuentes .section-preguntas-frecuentes__container {
@@ -821,11 +801,10 @@ a {
 .section-preguntas-frecuentes .section-preguntas-frecuentes__container .section-preguntas-frecuentes__article {
   border-bottom: solid #F1D302 1px;
   padding: 2rem;
-  margin: 0 5rem;
+  margin: 0 5rem auto;
 }
 @media screen and (max-width: 767px) {
   .section-preguntas-frecuentes .section-preguntas-frecuentes__container .section-preguntas-frecuentes__article {
-    margin: auto;
     padding: 2rem 0;
   }
 }
@@ -878,12 +857,11 @@ a {
 /*SECTION-UBICACION*/
 .section-location {
   margin: auto;
+  height: 600px;
   display: flex;
   flex-direction: column;
-  height: 600px;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 @media screen and (max-width: 767px) {
   .section-location {
@@ -922,7 +900,7 @@ a {
   }
 }
 .section-redes .section-redes__listItem {
-  transition: all 0.5s;
+  transition: transform 0.5s;
   margin: 0 2rem;
 }
 .section-redes .section-redes__listItem:hover {
@@ -999,7 +977,6 @@ a {
 }
 .section-contact-form__block .section-contact-form__form input {
   -webkit-appearance: none;
-  background: #111;
 }
 .section-contact-form__block .section-contact-form__form .radio-check {
   display: flex;
@@ -1050,7 +1027,7 @@ a {
   height: 0.8rem;
   margin: auto;
   display: inline-block;
-  background-color: none;
+  background: none;
   border: 3px solid #fbe555;
   border-radius: 50%;
   position: absolute;
@@ -1088,12 +1065,12 @@ a {
   -webkit-appearance: none;
   font-size: 1rem;
   padding: 1rem;
-  background: #111;
+  background-color: #111;
   transition: all 0.5s;
   margin-bottom: 0;
   margin-top: 2rem;
 }
 .section-contact-form__block .section-contact-form__form .section-contact-form__formInput--btn:hover {
-  background: #fbe555;
+  background-color: #fbe555;
   color: #111;
 }

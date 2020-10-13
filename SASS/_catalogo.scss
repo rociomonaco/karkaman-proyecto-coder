@@ -1,23 +1,9 @@
 
 /*CATALOGO*/
-.back-principal-section{
-    padding-top: 2rem;
-    background:$amarillo;
-    width: auto;
-    .title-principal-section{
-        padding: 4rem;
-        font-weight: 500;
-        color:black;
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 2rem;
-    }
-}
-
 .catalogo{
     .catalogo__list{
         margin: 5rem;
-        display:flex;
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
@@ -26,7 +12,7 @@
             margin: 1rem 0;
         }
         @media  screen and (min-width: 768px) and (max-width: 1199px){
-            margin:2rem 1rem;
+            margin: 2rem 1rem;
         }
         .catalogo__listItem{
             width: 20%;
@@ -47,7 +33,7 @@
             }
             .catalogo__listImg{
                 width: 100%;
-                align-self: center;
+                align-self: center; /*NAVEGADOR SAFARI*/
             }
             .block-hover{
                 .modal{
@@ -56,11 +42,11 @@
                         position: relative;
                         .close-modal{
                             width: auto;
-                            position:absolute;
+                            position: absolute;
                             right: 1rem;
                             top:0;
                             background: none;
-                            transition: all 1s;
+                            transition: color 1s;
                             font-size: 2rem;
                             border: none;
                             &:hover{
@@ -83,11 +69,10 @@
                                 margin: auto;
                                 background:rgba(0, 0, 0, 0.50);
                                 border-radius: 1rem;
-                                transition: all 0.5s;
+                                transition: background 0.5s;
                                 opacity: 1;
                                 &:hover{
                                     background: $amarillo;
-                                   
                                 }
                             }
                         }
