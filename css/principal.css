@@ -793,6 +793,11 @@ a {
   text-align: center;
 }
 @media screen and (max-width: 767px) {
+  .section-preguntas-frecuentes {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 767px) {
   .section-preguntas-frecuentes .section-preguntas-frecuentes__container {
     width: 90%;
   }
@@ -805,6 +810,7 @@ a {
 @media screen and (max-width: 767px) {
   .section-preguntas-frecuentes .section-preguntas-frecuentes__container .section-preguntas-frecuentes__article {
     padding: 2rem 0;
+    margin: 0;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
