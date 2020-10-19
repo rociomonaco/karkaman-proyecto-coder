@@ -152,7 +152,6 @@
             align-content: center;
             justify-content: center;
             margin: 0.5rem;
-            transition: all 1s;
             @extend %img-hover;
             @extend %hover;
             @media  screen and (max-width: 767px){
