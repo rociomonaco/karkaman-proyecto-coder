@@ -131,21 +131,23 @@ a {
   }
 }
 .header-index .header-index__title {
-  height: 100vh;
+  height: 500px;
   display: flex;
+  justify-content: flex-end;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: "Julius Sans One", sans-serif;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 280px) and (max-width: 1199px) {
   .header-index .header-index__title {
-    justify-content: flex-end;
+    height: 600px;
   }
 }
 @media screen and (max-width: 767px) {
   .header-index .header-index__title {
     justify-content: center;
+    align-content: center;
   }
 }
 .header-index .header-index__title .header-index__titleShoes {
