@@ -106,8 +106,11 @@ a {
 
 /*HEADER INDEX*/
 .header-index {
-  background: url("../imagenes/nosotros.jpeg") center/cover no-repeat;
+  background: url("../imagenes/nosotros.jpeg");
   min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .header-index::before {
   content: "";
