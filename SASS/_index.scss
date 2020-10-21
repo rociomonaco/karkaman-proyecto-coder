@@ -11,8 +11,6 @@
         height: 100vh;
         background: rgba(0, 0, 0, 0.5);
         position: absolute;
-
-
     }
     .fade-in-left{-webkit-animation:fade-in-left 1s cubic-bezier(.39,.575,.565,1.000) both;animation:fade-in-left 1s cubic-bezier(.39,.575,.565,1.000) both}
     @-webkit-keyframes fade-in-left{0%{-webkit-transform:translateX(-50px);transform:translateX(-50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes fade-in-left{0%{-webkit-transform:translateX(-50px);transform:translateX(-50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}  
@@ -26,15 +24,16 @@
         @media  screen and (min-width: 281px) and (max-width: 767px){
             padding-top: 6rem;
             height: 280px;
-            // height: 280;
             justify-content: center;
         }
         @media  screen and (min-width: 812px) and (max-width: 823px){
             height: 280px;
         }
-        @media  screen and (max-width: 280px) {
+        /*GALAXY FOLD*/
+        @media  screen and (max-width: 280px){
             height: 280px;
         }
+        /*GALAXY FOLD*/
         @media  screen and (min-width: 824px) and (max-width: 1199px){
             justify-content: flex-end;
         }

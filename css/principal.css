@@ -137,6 +137,8 @@ a {
   justify-content: flex-end;
   align-items: center;
   font-family: "Julius Sans One", sans-serif;
+  /*GALAXY FOLD*/
+  /*GALAXY FOLD*/
 }
 @media screen and (min-width: 281px) and (max-width: 767px) {
   .header-index .header-index__title {
