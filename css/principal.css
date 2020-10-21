@@ -131,16 +131,16 @@ a {
   }
 }
 .header-index .header-index__title {
-  height: 500px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   font-family: "Julius Sans One", sans-serif;
 }
-@media screen and (min-width: 280px) and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .header-index .header-index__title {
-    height: 600px;
+    justify-content: flex-end;
   }
 }
 @media screen and (max-width: 767px) {

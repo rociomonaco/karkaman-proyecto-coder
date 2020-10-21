@@ -15,14 +15,14 @@
     .fade-in-left{-webkit-animation:fade-in-left 1s cubic-bezier(.39,.575,.565,1.000) both;animation:fade-in-left 1s cubic-bezier(.39,.575,.565,1.000) both}
     @-webkit-keyframes fade-in-left{0%{-webkit-transform:translateX(-50px);transform:translateX(-50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes fade-in-left{0%{-webkit-transform:translateX(-50px);transform:translateX(-50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}  
     .header-index__title{
-        height: 500px;
+        height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
         font-family: $funteTituloIndex;
-        @media  screen and (min-width: 280px) and (max-width: 1199px){
-            height: 600px;
+        @media  screen and (max-width: 767px){
+            justify-content: flex-end;
         }
         @media  screen and (max-width: 767px) {
             justify-content: center;
