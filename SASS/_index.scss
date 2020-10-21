@@ -1,11 +1,9 @@
 
 /*HEADER INDEX*/
 .header-index{
-    background:url("../imagenes/nosotros.jpeg");
+    background: url("../imagenes/nosotros.jpeg") center/cover no-repeat;
     min-height:100vh;
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size:cover;
+
     &::before{
         content: "";
         display: block;
@@ -13,33 +11,37 @@
         height: 100vh;
         background: rgba(0, 0, 0, 0.5);
         position: absolute;
+
+
     }
     .fade-in-left{-webkit-animation:fade-in-left 1s cubic-bezier(.39,.575,.565,1.000) both;animation:fade-in-left 1s cubic-bezier(.39,.575,.565,1.000) both}
     @-webkit-keyframes fade-in-left{0%{-webkit-transform:translateX(-50px);transform:translateX(-50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes fade-in-left{0%{-webkit-transform:translateX(-50px);transform:translateX(-50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}  
     .header-index__title{
-        // height: 100vh;
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
-        // align-items: center;
-        // font-family: $funteTituloIndex;
-        // @media  screen and (max-width: 767px){
-        //     justify-content: center;
-        // }
-        height: 500px;
+     
+        height: 600px;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
-        align-content: flex-end;
         font-family: $funteTituloIndex;
-        @media  screen and (min-width: 280px) and (max-width: 1199px){
-            height: 600px;
-        }
-        @media  screen and (max-width: 767px) {
+
+        @media  screen and (min-width: 281px) and (max-width: 767px){
+            padding-top: 6rem;
+            height: 320px;
             justify-content: center;
-            align-content: center;
+    
         }
+        @media  screen and (min-width: 812px) and (max-width: 823px){
+            height: 280px;
+        }
+        @media  screen and (max-width: 280px) {
+            height: 280px;
+        }
+
+        @media  screen and (min-width: 824px) and (max-width: 1199px){
+            justify-content: flex-end;
+        }
+        
         .header-index__titleShoes{
             font-size: 5rem;
             color: white;
