@@ -141,18 +141,8 @@ a {
 @media screen and (min-width: 281px) and (max-width: 767px) {
   .header-index .header-index__title {
     padding-top: 6rem;
-    height: 320px;
+    height: 280;
     justify-content: center;
-  }
-}
-@media screen and (min-width: 812px) and (max-width: 823px) {
-  .header-index .header-index__title {
-    height: 280px;
-  }
-}
-@media screen and (max-width: 280px) {
-  .header-index .header-index__title {
-    height: 280px;
   }
 }
 @media screen and (min-width: 824px) and (max-width: 1199px) {
