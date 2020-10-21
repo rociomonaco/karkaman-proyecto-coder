@@ -131,23 +131,16 @@ a {
   }
 }
 .header-index .header-index__title {
-  height: 500px;
+  height: 100vh;
   display: flex;
-  justify-content: flex-end;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: "Julius Sans One", sans-serif;
 }
-@media screen and (min-width: 280px) and (max-width: 1199px) {
-  .header-index .header-index__title {
-    height: 600px;
-  }
-}
 @media screen and (max-width: 767px) {
   .header-index .header-index__title {
     justify-content: center;
-    align-content: center;
   }
 }
 .header-index .header-index__title .header-index__titleShoes {
